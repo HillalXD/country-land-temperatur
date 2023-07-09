@@ -1,17 +1,57 @@
-# country-land-temperature
 
-this project are designed for predict average temperature on indonesia based on month and year
+# Indonesia temperature forecast
 
-### **Needed Library**
+This project use to predict temperature in indonesia on spesific month and year
 
-- Pandas      (use for handling csv data)
-- Numpy       (handling number data)
-- Matplotlib  (For data visualization)
-- SKlearn     (Make Logistic regression model)
-- xgboost     (For regression model)
-- Pickle      (Export and import library)
-- Streamlit   (Webapp development)
+## Install
 
-### **Needed source**
+This project requires **Python** and the following Python libraries installed:
 
-- average temperature dataset = [land-temperature.csv](https://www.kaggle.com/datasets/vijayvvenkitesh/global-land-temperatures-by-country)
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org/)
+- [seaborn](https://seaborn.pydata.org/)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [xgboost](https://xgboost.readthedocs.io/en/stable/)
+- [streamlit](https://streamlit.io/)
+
+## Usage
+
+first, you can clone this git repository
+
+```
+git clone https://github.com/HillalXD/country-land-temperature.git
+```
+
+then navigate your command to this directory
+
+```
+cd country-land-temperature
+```
+
+after that run `app.py` to use streamlit app
+
+```
+streamlit run app.py
+```
+
+
+## Code 
+- Template code is provided in the `temperature.ipynb` notebook file.
+- `land-temperature.csv` in provide data source for training model
+- `xgboost.pkl` is trained classifier model file
+- `app.py` is streamlit web application to user input features for model predicting 
+
+
+## Dataset features
+
+for doing prediction you need to input this features:
+
+| features  | explanation  | 
+| :-------- | :------- | 
+| month | month in number |
+| year | year for energy consumption forecast|
+
+
+
+
